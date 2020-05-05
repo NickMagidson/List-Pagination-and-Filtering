@@ -2,25 +2,23 @@
 Treehouse Techdegree:
 FSJS project 2 - List Filter and Pagination
 ******************************************/
-   
-// Study guide for this project - https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing
 
 
 // Global Variables
 
 const studentlistItem = document.querySelectorAll('li.student-item');
-const numOfItems = 10;
+const numOfItems = 9; 
 
-const numofButtons = Math.ceil(studentlistItem.length / numOfItems);
+const numofButtons = Math.ceil(studentlistItem.length / numOfItems); // Rounds it up
 
-console.log(studentlistItem); // test
+console.log(studentlistItem); // Console test
 
-// Function showPage that hides all students except for students (list, page)
+// Function showPage that hides all students except for 10 students (list, page)
 function showPage(list, page) {
    let startIndex = (page * numOfItems) - numOfItems;
-   let endIndex = page * numOfItems;
+   let endIndex = page * numOfItems; 
    
-   for (let i = 0; i < list.length; i++) {
+   for (let i = 0; i < list.length; i += 1) {
       if (i >= startIndex && i <= endIndex) {
          list[i].style.display = 'block'; // Show it
       } else {
