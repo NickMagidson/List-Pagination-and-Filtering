@@ -27,7 +27,7 @@ function showPage(list, page) {
    }
 };
 
-console.log(showPage(studentlistItem, numofButtons)); // test
+//console.log(showPage(studentlistItem, numofButtons)); // test
 
 // appendPageLinks function will create and append functioning pagination links
 
@@ -38,6 +38,7 @@ function appendPageLinks(list) {
    pageDiv.appendChild(div);
    let ul = document.createElement('ul'); // Create ul
    div.appendChild(ul); 
+
    for (x = 1; x <= numofButtons; x++) {
       let listItem = document.createElement('li'); // create li
       let listAnchor = document.createElement('a'); // create a
