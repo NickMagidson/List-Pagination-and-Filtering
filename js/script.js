@@ -54,8 +54,8 @@ function appendPageLinks(list) {
          let activeItem = document.querySelector(".active");
          activeItem.classList.remove('active');
          e.target.classList.add('active');
-         let current = document.getElementsByClassName("active");
-         this.className += "active";
+         //let current = document.getElementsByClassName("active");
+         //this.className += "active";
          showPage(list, listAnchor.textContent);
       })
    }
